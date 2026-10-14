@@ -19,6 +19,17 @@
 .lyric-wrap p.lyric.active{opacity:1;filter:none;transform:scale(1.025);color:#553064;text-shadow:0 3px 20px #c49bda45}
 .letter h1{margin:1rem 0 1.5rem}
 @media(max-width:600px){.bloom{transform:translateX(-50%) scale(.86);transform-origin:bottom center}.lyric-wrap{padding-top:24vh;padding-bottom:28vh}.lyric-wrap p.lyric{padding:6px 0!important;line-height:1.2}}
+
+/* Use the dedicated hyacinth meadow artwork instead of the old daisy-like CSS scene */
+.meadow{height:72vh;min-height:560px;background:#cdb1dd url('./hyacinth-meadow.svg') center bottom/cover no-repeat;position:relative;overflow:hidden}
+.meadow .sun,.meadow .hill,.meadow .flowers{display:none!important}
+.meadow::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,#fff0f71a 0%,transparent 35%,#60457518 100%)}
+.hero{min-height:78vh}
+.lyric-wrap{padding:20vh 1rem 22vh}
+.lyric-wrap p.lyric{min-height:0!important;margin:0!important;padding:6px 0!important;font:500 clamp(1.35rem,4.8vw,2.15rem)/1.2 'Cormorant Garamond',serif;letter-spacing:.01em;opacity:.24;filter:blur(.7px);transform:scale(.96);transition:opacity .35s ease,transform .35s ease,filter .35s ease;white-space:pre-wrap}
+.lyric-wrap p.lyric.visible{opacity:.48;filter:blur(.2px);transform:scale(.985)}
+.lyric-wrap p.lyric.active{opacity:1;filter:none;transform:scale(1.02);color:#553064;text-shadow:0 3px 20px #c49bda45}
+@media(max-width:600px){.meadow{height:66vh;min-height:480px;background-position:center bottom}.lyric-wrap{padding:19vh 1rem 21vh}.lyric-wrap p.lyric{padding:5px 0!important;line-height:1.18}}
 </style></head><body>
 <header class="hero" id="top"><p class="eyebrow">a little place made just for you</p><h1>Welcome<br><span>Zada Faizel</span></h1><p class="intro">My favourite person, in my favourite little world. Made with all my heart, just for you.</p><a class="btn" href="#memories">Open, my love ♡</a><p class="muted">scroll a little, my babyyy</p></header>
 <div class="meadow" aria-label="A dreamy field of purple hyacinths"><div class="sun"></div><div class="hill backhill"></div><div class="hill fronthill"></div><div class="flowers" id="flowers"></div></div>
